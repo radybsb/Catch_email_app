@@ -1,3 +1,5 @@
+/* palette color https://colorhunt.co/palette/eeebddce12128100001b1717 */
+
 html,
 body {
   height: 100%;
@@ -6,23 +8,44 @@ body {
 body {
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #EEEBDD;
+  font-family: 'Rubik', sans-serif;
 }
 
-.mb-4 {
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #0d6efd;
+h1{
+  font-family: 'Roboto Slab', serif;
+  display:inline-block;
+  text-align: left;
+}
+
+.name{
+  position: static;
+}
+
+.header {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #1B1717;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.logo {
+  width: 5rem;
+  height: 4.5rem;
+}
+
+.h3{
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  max-width: 430px;
   padding: 15px;
   margin: auto;
 }

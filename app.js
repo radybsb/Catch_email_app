@@ -51,7 +51,13 @@ app.post("/", function(req, res){
     if(response.error_count === 0) {
       res.sendFile(__dirname + "/success.html");
     }
+
+    else if(response.errors[0].error_code === "ERROR_CONTACT_EXISTS") {
+      res.sendFile(__dirname + "/existing_contact.html");
+    }
+
     else{
+      console.log();
       res.sendFile(__dirname + "/failure.html");
     }
   };
@@ -60,6 +66,14 @@ app.post("/", function(req, res){
 });
 
 app.post("/failure", (req, res) => {
+  res.redirect("/");
+})
+
+app.post("/success", (req, res) => {
+  res.redirect("/");
+})
+
+app.post("/existing_contact", (req, res) => {
   res.redirect("/");
 })
 
